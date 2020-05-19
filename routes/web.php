@@ -21,8 +21,7 @@ Auth::routes();
 Route::middleware(['auth'])->group(function () {
 
 
-    Route::get('/home', 'HomeController@index')->name('home');
-
+    Route::get('/home', 'ContactController@index');
     Route::get('/contacts', 'ContactController@index')->name('contacts');
     Route::get('/contacts/create', 'ContactController@create');
     Route::post('/contacts/insert', 'ContactController@insert');

@@ -39,8 +39,9 @@ class ContactController extends Controller
 
     public function edit($id)
     {
-        $report = DailyReport::findOrFail($id);
-        return view('contacts/form', ['report'=>$report]);
+        $contact = Contact::findOrFail($id);
+        $categories = Category::get()->pluck('name','id');
+        return view('contacts/form', ['contact'=>$contact, 'categories'=> $categories]);
     }
 
     public function insert(Request $request){
