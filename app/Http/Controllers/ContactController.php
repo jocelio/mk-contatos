@@ -71,6 +71,6 @@ class ContactController extends Controller
         $contact->delete();
 
         \Session::flash('status', 'Contato removido com sucesso');
-        return Redirect::to('report');
+        return Redirect::to('contacts');
     }
 }

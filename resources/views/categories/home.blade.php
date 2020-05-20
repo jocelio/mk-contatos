@@ -33,11 +33,10 @@
                             </thead>
                             <tbody>
                             @foreach($categories as $category)
-                                <tr>
+                                <tr style="width: 100%">
                                     <td>{{$category->id}}</td>
                                     <td data-order="{{$category->name}}">{{$category->name}}</td>
-                                    <td class="btn-group">
-
+                                    <td class="btn-group" style="width: 30%;">
                                         {!! Form::model($category, ['method'=>'DELETE', 'url'=> 'contact/'.$category->id]) !!}
                                         <a href="/categories/{{$category->id}}/edit" class="btn btn-outline-info">Editar</a>
                                         <button type="submit" onClick="return confirmDeletion()"

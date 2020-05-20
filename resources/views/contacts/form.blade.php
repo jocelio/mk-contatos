@@ -44,7 +44,7 @@
                             <div class="col">
                                 <div class="form-group">
                                 {!! Form::label('phone2', 'Telefone (Opcional)') !!}
-                                {!! Form::input('text', 'phone2', null, ['class' => 'form-control', 'required', 'placeholder' => 'Telefone'])  !!}
+                                {!! Form::input('text', 'phone2', null, ['class' => 'form-control', 'placeholder' => 'Telefone'])  !!}
                                 </div>
                             </div>
                         </div>

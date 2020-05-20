@@ -48,10 +48,9 @@
                                     <td>{{$contact->shipping_method}}</td>
                                     <td class="btn-group">
 
-                                        {!! Form::model($contact, ['method'=>'DELETE', 'url'=> 'contact/'.$contact->id]) !!}
+                                        {!! Form::model($contact, ['method'=>'DELETE', 'url'=> 'contacts/'.$contact->id]) !!}
                                         <a href="/contacts/{{$contact->id}}/edit" class="btn btn-outline-info">Editar</a>
-                                        <button type="submit" onClick="return confirmDeletion()"
-                                                href="/clientes/{{$contact->id}}/excluir" class="btn btn-outline-danger">Excluir</button>
+                                        <button type="submit" onClick="return confirmDeletion()" class="btn btn-outline-danger">Excluir</button>
                                         {!! Form::close() !!}
                                     </td>
                                 </tr>
