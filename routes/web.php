@@ -36,4 +36,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/categories/{report}/edit', 'CategoryController@edit');
     Route::post('/categories/{report}', 'CategoryController@update');
     Route::delete('/categories/{report}', 'CategoryController@delete');
+
+    Route::get('users', 'InviteController@index')->name('inviteUsers');
+    Route::get('invite', 'InviteController@invite')->name('invite');
+    Route::post('invite', 'InviteController@process')->name('process');
+
+
 });
+// {token} is a required parameter that will be exposed to us in the controller method
+Route::get('accept/{token}', 'InviteController@accept')->name('accept');
+Route::post('create/{token}', 'InviteController@create')->name('create');

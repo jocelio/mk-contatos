@@ -59,6 +59,9 @@
                             @endif
                         @else
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('inviteUsers') }}">Usuários</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('contacts') }}">Contatos</a>
                             </li>
                             <li class="nav-item">
