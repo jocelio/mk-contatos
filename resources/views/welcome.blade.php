@@ -115,8 +115,8 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="images/marquim.jpeg" alt="">
-                    <h5>Margaret E.</h5>
+                    <img class="img-fluid rounded-circle mb-3" src="images/marquim2.jpeg" alt="">
+                    <h5>Margaret E.</h5>gi
                     <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
                 </div>
             </div>
